@@ -5,7 +5,7 @@ candy crush clone with a Juice Leskinen twist
 For fun mostly. This kind of project quite literally cannot be for profit.
 
 # TODO list
-- [ ] create/use some kind of datastructure for storing and handling the infinite level/map
+- [X] create/use some kind of datastructure for storing and handling the infinite level/map
 - [ ] create a function for initially filling the infinite (in actuality 8x8) map
 - [ ] create a function for handling the destruction of the juice candies
 - [ ] create a function for handling the refilling of the infinite map
@@ -25,3 +25,5 @@ The candygrid itself is stored in a 2D char array with the size of 8x8 as per pr
 ```c
 char candygrid_storage_2D_array[8][8];
 ```
+
+Created the function ft_empty_candy_grid() to avoid any issues that might at some point come from any data that has been left behind to the 2D array that is candygrid_storage_2D_array. The function and the array are both stored in the candygrid operations c file. The function just goes through every "square" in the "grid" that is the 2D array that was just mentioned in the text before this almost incoherent rambling that I call a README.md and just replaces everything with a ' '.
