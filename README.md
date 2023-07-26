@@ -6,7 +6,7 @@ For fun mostly. This kind of project quite literally cannot be for profit.
 
 # TODO list
 - [X] create/use some kind of datastructure for storing and handling the infinite level/map
-- [ ] create a function for initially filling the infinite (in actuality 8x8) map
+- [X] create a function for initially filling the infinite (in actuality 8x8) map
 - [ ] create a function for handling the destruction of the juice candies
 - [ ] create a function for handling the refilling of the infinite map
 - [ ] find out what is needed to create a window with SDL
@@ -40,4 +40,10 @@ void ft_empty_candy_grid()
 		}
 	}
 }
+```
+
+Created the function ft_fill_empty_candy_grid() to initialize the game state properly for the game to start without any issues. It first calls ft_empty_candy_grid() and then fills the character positions in exactly the same way as the ft_empty_candy_grid but instead of spaces the characters used are capital letters ranging from A to A+n where n is the maximum number that the randomly assigned variable is allowed to go above A. The method for random number used is rand which is defined in the stdlib.h
+
+```c
+'A'+(rand() % n)
 ```
