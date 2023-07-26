@@ -40,9 +40,12 @@ ft_fill_empty_candy_grid(int n)
 	}
 }
 
-void printthewholefuckingcombo() {
+void
+printthewholefuckingcombo() {
 	ft_empty_candy_grid();
 	print_grid_to_console();
 	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
 }
+
+

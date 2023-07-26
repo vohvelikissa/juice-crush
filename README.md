@@ -16,16 +16,21 @@ For fun mostly. This kind of project quite literally cannot be for profit.
 - [ ] play some music in the background with some kind of a function
 
 # Notes
+
+## Code Standard that I attempt to use here
 This project will be following GNU C coding standards to the best of my abilities.
 
+## Reasonings for why different files are like they are
 Candygrid.c was chosen as a container for the candygrid operations because <br> I have been sold the idea of splitting code functionalities into files that are named accordingly to what the thing is and what it might do when finished at one point and of course I have full on just purchased it and am currently still running with it. If you are able to code and have the will to modify the structural choices of this project to be something else entirely, feel free to do so! I will not be changing this choice for a while.
 
+## Backstories for the significant variables that I just happened to become using
 The candygrid itself is stored in a 2D char array with the size of 8x8 as per previos text lines of text in this very file and it has been initialized as follows:
 
 ```c
 char candygrid_storage_2D_array[8][8];
 ```
 
+## Reasongings for why the functions are the way that they are
 Created the function ft_empty_candy_grid() to avoid any issues that might at some point come from any data that has been left behind to the 2D array that is candygrid_storage_2D_array. The function and the array are both stored in the candygrid operations c file. The function just goes through every "square" in the "grid" that is the 2D array that was just mentioned in the text before this almost incoherent rambling that I call a README.md and just replaces everything with a ' '.
 
 
@@ -49,3 +54,4 @@ Created the function ft_fill_empty_candy_grid() to initialize the game state pro
 ```
 
 For testing purposes functions print_grid_to_console() and printthewholefuckingcombo() were added. print_grid_to_console is there to print the stored grid values to console to see if they work properly and the combo function is there to see if the functions work together well. So far everything has worked better than expected, which itself is not saying much because my code is generally so fucking bad.
+
