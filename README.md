@@ -16,11 +16,12 @@ For fun mostly. This kind of project quite literally cannot be for profit.
 - [ ] play some music in the background with some kind of a function
 
 # Notes
+This project will be following GNU C coding standards to the best of my abilities.
 
 Candygrid.c was chosen as a container for the candygrid operations because <br> I have been sold the idea of splitting code functionalities into files that are named accordingly to what the thing is and what it might do when finished at one point and of course I have full on just purchased it and am currently still running with it. If you are able to code and have the will to modify the structural choices of this project to be something else entirely, feel free to do so! I will not be changing this choice for a while.
 
 The candygrid itself is stored in a 2D char array with the size of 8x8 as per previos text lines of text in this very file and it has been initialized as follows:
 
 ```c
-char candygrid[8][8]
+char candygrid_storage_2D_array[8][8];
 ```

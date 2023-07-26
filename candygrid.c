@@ -1,1 +1,3 @@
-char candygrid[8][8];
+char candygrid_storage_2D_array[8][8];
+
+
