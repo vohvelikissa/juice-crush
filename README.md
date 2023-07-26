@@ -27,3 +27,17 @@ char candygrid_storage_2D_array[8][8];
 ```
 
 Created the function ft_empty_candy_grid() to avoid any issues that might at some point come from any data that has been left behind to the 2D array that is candygrid_storage_2D_array. The function and the array are both stored in the candygrid operations c file. The function just goes through every "square" in the "grid" that is the 2D array that was just mentioned in the text before this almost incoherent rambling that I call a README.md and just replaces everything with a ' '.
+
+
+```c
+void ft_empty_candy_grid()
+{
+	for(int i = 0; i<8; i++)
+	{
+		for(int j = 0; j<8; j++)
+		{
+			candygrid_storage_2D_array[i][j] = ' ';
+		}
+	}
+}
+```
