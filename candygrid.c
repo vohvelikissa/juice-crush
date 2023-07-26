@@ -2,6 +2,7 @@
 #include<stdio.h>
 
 char candygrid_storage_2D_array[8][8];
+char desctructiongrid_storage_2D_array[8][8];
 
 void
 print_grid_to_console() {

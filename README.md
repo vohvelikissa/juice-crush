@@ -30,9 +30,10 @@ The candygrid itself is stored in a 2D char array with the size of 8x8 as per pr
 char candygrid_storage_2D_array[8][8];
 ```
 
+Exactly the same and equivalent variable called destructiongrid_storage_2D_array has been created to be initially empty and then to be a marker for which squares need to be removed and then filled with both gravity magic and regeneration of candies. 
+
 ## Reasongings for why the functions are the way that they are
 Created the function ft_empty_candy_grid() to avoid any issues that might at some point come from any data that has been left behind to the 2D array that is candygrid_storage_2D_array. The function and the array are both stored in the candygrid operations c file. The function just goes through every "square" in the "grid" that is the 2D array that was just mentioned in the text before this almost incoherent rambling that I call a README.md and just replaces everything with a ' '.
-
 
 ```c
 void ft_empty_candy_grid()
