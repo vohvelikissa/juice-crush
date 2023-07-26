@@ -33,6 +33,8 @@ char candygrid_storage_2D_array[8][8];
 Exactly the same and equivalent variable called destructiongrid_storage_2D_array has been created to be initially empty and then to be a marker for which squares need to be removed and then filled with both gravity magic and regeneration of candies. 
 
 ## Reasongings for why the functions are the way that they are
+
+### ft_empty_candy_grid
 Created the function ft_empty_candy_grid() to avoid any issues that might at some point come from any data that has been left behind to the 2D array that is candygrid_storage_2D_array. The function and the array are both stored in the candygrid operations c file. The function just goes through every "square" in the "grid" that is the 2D array that was just mentioned in the text before this almost incoherent rambling that I call a README.md and just replaces everything with a ' '.
 
 ```c
@@ -48,11 +50,13 @@ void ft_empty_candy_grid()
 }
 ```
 
+### ft_fill_empty_candy_grid
 Created the function ft_fill_empty_candy_grid() to initialize the game state properly for the game to start without any issues. It first calls ft_empty_candy_grid() and then fills the character positions in exactly the same way as the ft_empty_candy_grid but instead of spaces the characters used are capital letters ranging from A to A+n where n is the maximum number that the randomly assigned variable is allowed to go above A. The method for random number used is rand which is defined in the stdlib.h
 
 ```c
 'A'+(rand() % n)
 ```
 
+### Testing functions
 For testing purposes functions print_grid_to_console() and printthewholefuckingcombo() were added. print_grid_to_console is there to print the stored grid values to console to see if they work properly and the combo function is there to see if the functions work together well. So far everything has worked better than expected, which itself is not saying much because my code is generally so fucking bad.
 
