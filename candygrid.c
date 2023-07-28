@@ -52,6 +52,23 @@ move_candy_from_a_to_b(int x1, int y1, int x2, int y2) {
 	}
 }
 
+int count_from_x(int x, int y) {
+	//TODO: count the x values from candygrid storage
+	return x+y;
+}
+
+int count_from_y(int x, int y) {
+	//TODO: count the y values from candygrid storage
+	return x+y;
+}
+
+int
+detect_if_candy_can_be_destroyed(int x, int y) {
+	int xcount = count_from_x(x,y);
+	int ycount = count_from_y(x,y);
+	return (xcount+ycount) >= 3;
+}
+
 void
 printthewholefuckingcombo() {
 	ft_empty_candy_grid();

@@ -64,6 +64,15 @@ Created the function ft_fill_empty_candy_grid() to initialize the game state pro
 'A'+(rand() % n)
 ```
 
+### move_candy_from_a_to_b
+this function is basically just charcpy with a boundary added to it
+
+### detect_if_candy_can_be_destroyed
+
+### count_from_x
+
+### count_from_y
+
 ### Testing functions
 For testing purposes functions print_grid_to_console() and printthewholefuckingcombo() were added. print_grid_to_console is there to print the stored grid values to console to see if they work properly and the combo function is there to see if the functions work together well. So far everything has worked better than expected, which itself is not saying much because my code is generally so fucking bad.
 
