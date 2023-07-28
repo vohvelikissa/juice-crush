@@ -45,9 +45,9 @@ ft_fill_empty_candy_grid(int n)
 void move_candy_from_a_to_b(int x1, int y1, int x2, int y2) {
 	if ((x1 >= 0 && x1 < 8) && (y1 >= 0 && y1 < 8) && (x2 >= 0 && x2 < 8) && (y2 >= 0 && y2 < 8))
 	{
-		//TODO: create a copy of the dest row
-		//TODO: assign the value of the src to dest
-		//TODO: assign the value of the destcpy to src
+		char destcpy = candygrid_storage_2D_array[y1][x1];
+		candygrid_storage_2D_array[y1][x1] = candygrid_storage_2D_array[y2][x2];
+		candygrid_storage_2D_array[y2][x2] = destcpy; 
 	}
 }
 

@@ -7,7 +7,7 @@ For fun mostly. This kind of project quite literally cannot be for profit.
 # TODO list
 - [X] create/use some kind of datastructure for storing and handling the infinite level/map
 - [X] create a function for initially filling the infinite (in actuality 8x8) map
-- [ ] create a function for handling the moving of juice candies
+- [X] create a function for handling the moving of juice candies
 - [ ] create a function for checking if juice candies can be destroyed
 - [ ] create a function for destroying juice candies
 - [ ] create a function for handling the refilling of the infinite map
