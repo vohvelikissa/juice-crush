@@ -8,7 +8,7 @@ For fun mostly. This kind of project quite literally cannot be for profit.
 - [X] create/use some kind of datastructure for storing and handling the infinite level/map
 - [X] create a function for initially filling the infinite (in actuality 8x8) map
 - [X] create a function for handling the moving of juice candies
-- [ ] create a function for checking if juice candies can be destroyed
+- [X] create a function for checking if juice candies can be destroyed
 - [ ] create a function for destroying juice candies
 - [ ] create a function for handling the refilling of the infinite map
 - [ ] find out what is needed to create a window with SDL
@@ -68,10 +68,23 @@ Created the function ft_fill_empty_candy_grid() to initialize the game state pro
 this function is basically just charcpy with a boundary added to it
 
 ### detect_if_candy_can_be_destroyed
+this function just sums the things from count_from_* functions and checks if the result is equal to or over 3.
 
 ### count_from_x
 
+### count_forward_in_x
+this function was purely written to make this shit easy to read
+
+### count_backward_in_x
+this function was purely written to make this shit easy to read
+
 ### count_from_y
+
+### count_forward_in_y
+this function was purely written to make this shit easy to read
+
+### count_backward_in_y
+this function was purely written to make this shit easy to read
 
 ### Testing functions
 For testing purposes functions print_grid_to_console() and printthewholefuckingcombo() were added. print_grid_to_console is there to print the stored grid values to console to see if they work properly and the combo function is there to see if the functions work together well. So far everything has worked better than expected, which itself is not saying much because my code is generally so fucking bad.
