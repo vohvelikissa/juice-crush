@@ -9,8 +9,10 @@ For fun mostly. This kind of project quite literally cannot be for profit.
 - [X] create a function for initially filling the infinite (in actuality 8x8) map
 - [X] create a function for handling the moving of juice candies
 - [X] create a function for checking if juice candies can be destroyed
-- [ ] create a function for destroying juice candies
-- [ ] create a function for handling the refilling of the infinite map
+- [ ] create a function for checking which juice candies can be destroyed
+- [ ] create a function for destroying the allowed juice candies
+- [ ] create a function for applying "gravity" to fill inbetween holes
+- [ ] create a function for filling the top hole(s) randomly with juice candies
 - [ ] find out what is needed to create a window with SDL
 - [ ] create a function that updates the candies drawn on the screen based on the grid
 - [ ] create a function that handles the mouse clicks on the grid positions

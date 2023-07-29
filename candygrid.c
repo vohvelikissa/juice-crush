@@ -117,6 +117,11 @@ detect_if_candy_can_be_destroyed(int x, int y) {
 	return (count_from_x(x,y)+count_from_y(x,y)) >= 3;
 }
 
+//TODO: check which candies can be destroyed
+//TODO: destroy the allowed candies
+//TODO: apply "gravity" to fill holes
+//TODO: fill remaining holes with random candies
+
 void
 printthewholefuckingcombo() {
 	ft_empty_candy_grid();
@@ -124,5 +129,3 @@ printthewholefuckingcombo() {
 	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
 }
-
-
