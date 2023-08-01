@@ -114,7 +114,8 @@ count_from_y(int x, int y) {
 
 int
 detect_if_candy_can_be_destroyed(int x, int y) {
-	return (count_from_x(x,y)+count_from_y(x,y)) >= 3;
+	//The reason for why 4 instead of 3 is that there is an overlap when you count the candies that counts one candy twice
+	return (count_from_x(x,y)+count_from_y(x,y)) >= 4;
 }
 
 //TODO: check which candies can be destroyed
