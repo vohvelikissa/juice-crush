@@ -114,8 +114,12 @@ count_from_y(int x, int y) {
 
 int
 detect_if_candy_can_be_destroyed(int x, int y) {
-	//The reason for why 4 instead of 3 is that there is an overlap when you count the candies that counts one candy twice
-	return (count_from_x(x,y)+count_from_y(x,y)) >= 4;
+	/**
+	the reason for why the number is six is that the
+	number of candies to qualify for destruction is 3
+	and my dumbass made one of the candies to be counted 4 times.
+	**/
+	return (count_from_x(x,y)+count_from_y(x,y)) >= 6;
 }
 
 //TODO: check which candies can be destroyed
@@ -129,4 +133,11 @@ printthewholefuckingcombo() {
 	print_grid_to_console();
 	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
+	move_candy_from_a_to_b(0,0,1,0);
+}
+
+int main(void) {
+	printthewholefuckingcombo();
+	print_grid_to_console();
+	printf("%d",detect_if_candy_can_be_destroyed(1,0));
 }
