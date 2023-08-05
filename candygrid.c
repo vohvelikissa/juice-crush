@@ -149,14 +149,10 @@ printthewholefuckingcombo() {
 	ft_empty_candy_grid();
 	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
-	detect_if_candy_can_be_destroyed(1,0);
+	detect_if_candy_can_be_destroyed(2,1);
 	print_grid_to_console();
 	destroy_the_allowed_candies();
 	print_grid_to_console();
 	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
-}
-
-int main(void) {
-	printthewholefuckingcombo();
 }
