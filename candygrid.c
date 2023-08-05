@@ -3,7 +3,7 @@
 #include<string.h>
 
 char candygrid_storage_2D_array[8][8];
-char desctructiongrid_storage_2D_array[8][8];
+char destructiongrid_storage_2D_array[8][8];
 
 void
 print_grid_to_console() {
@@ -25,6 +25,7 @@ ft_empty_candy_grid()
 		for (int j = 0; j<8; j++)
 		{
 			candygrid_storage_2D_array[i][j] = ' ';
+			destructiongrid_storage_2D_array[i][j] = ' ';
 		}
 	}
 }
@@ -123,22 +124,25 @@ detect_if_candy_can_be_destroyed(int x, int y) {
 }
 
 //TODO: check which candies can be destroyed
+void
+fill_the_destroyable_candies_to_the_destroygrid(int x, int y) {
+	//TODO: find the dimensions of the destroyable area
+	//TODO: find the inbetween areas that can be destroyed
+	//TODO: fill the array respectively to the above things
+	if (detect_if_candy_can_be_destroyed(x,y)) {
+		printf("TO BE IMPLEMENTED\n");
+	}
+}
+
 //TODO: destroy the allowed candies
 //TODO: apply "gravity" to fill holes
 //TODO: fill remaining holes with random candies
 
 void
 printthewholefuckingcombo() {
-	ft_empty_candy_grid();
-	print_grid_to_console();
-	ft_fill_empty_candy_grid(5);
-	print_grid_to_console();
-	printf("%d\n",detect_if_candy_can_be_destroyed(1,0));
-	move_candy_from_a_to_b(0,0,1,0);
+	//TODO: test the destruction functionality here
 }
 
 int main(void) {
 	printthewholefuckingcombo();
-	print_grid_to_console();
-	printf("%d\n",detect_if_candy_can_be_destroyed(1,0));
 }
