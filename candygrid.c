@@ -133,11 +133,12 @@ printthewholefuckingcombo() {
 	print_grid_to_console();
 	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
+	printf("%d\n",detect_if_candy_can_be_destroyed(1,0));
 	move_candy_from_a_to_b(0,0,1,0);
 }
 
 int main(void) {
 	printthewholefuckingcombo();
 	print_grid_to_console();
-	printf("%d",detect_if_candy_can_be_destroyed(1,0));
+	printf("%d\n",detect_if_candy_can_be_destroyed(1,0));
 }
