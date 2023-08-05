@@ -33,12 +33,14 @@ ft_empty_candy_grid()
 void
 ft_fill_empty_candy_grid(int n)
 {
-	ft_empty_candy_grid();
+	//ft_empty_candy_grid(); not auto emptying because I have a better idea now.
 	for (int i = 0; i<8; i++)
 	{
 		for (int j = 0; j<8; j++)
 		{
-			candygrid_storage_2D_array[i][j] = 'A'+(rand() % n);
+			if(candygrid_storage_2D_array[i][j] == ' ') {
+				candygrid_storage_2D_array[i][j] = 'A'+(rand() % n);
+			}
 		}
 	}
 }
@@ -139,16 +141,18 @@ void destroy_the_allowed_candies() {
 }
 
 //TODO: apply "gravity" to fill holes
-//TODO: fill remaining holes with random candies
 
 void
 printthewholefuckingcombo() {
 	//TODO: test the destruction functionality here
+	ft_empty_candy_grid();
 	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
 	detect_if_candy_can_be_destroyed(1,0);
 	print_grid_to_console();
 	destroy_the_allowed_candies();
+	print_grid_to_console();
+	ft_fill_empty_candy_grid(5);
 	print_grid_to_console();
 }
 
