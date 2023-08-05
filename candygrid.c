@@ -141,6 +141,7 @@ void destroy_the_allowed_candies() {
 }
 
 //TODO: apply "gravity" to fill holes
+//TODO: destroy the destroyable inbetweeners
 
 void
 printthewholefuckingcombo() {
