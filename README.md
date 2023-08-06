@@ -19,6 +19,11 @@ For fun mostly. This kind of project quite literally cannot be for profit.
 - [ ] create a function that handles the destruction of juice candies based on the clicks
 - [ ] play some music in the background with some kind of a function
 
+# Building
+Install SDL2 by following their instructions
+
+Do something like "gcc -Wall -Wextra -Werror -Wpedantic *.c"
+
 # Notes
 
 ## Code Standard that I attempt to use here
