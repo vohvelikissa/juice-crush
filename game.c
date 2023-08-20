@@ -8,10 +8,8 @@ int main(void)  {
 	//TODO: draw a click marker
 	//TODO: destroy candies accordingly
 	//TODO: game loop
-	SDL_CreateWindow("haista paska",50,50,50,50,SDL_WINDOW_FULLSCREEN);
-	SDL_ShowSimpleMessageBox( SDL_MESSAGEBOX_INFORMATION,
-				"Hellow World",
-				"asdasjkl_fuckyou",
-				NULL);
-	SDL_Delay(2000);
+	//TODO: create a window
+	//TODO: get renderer
+	//TODO: figure out if you need surface and get it if need be
+	//TODO: add tasks
 }
